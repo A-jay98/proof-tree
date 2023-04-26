@@ -12,6 +12,8 @@ def main():
         logging.debug("Config read:\n %s" % settings)
     if settings.UI:
         logging.debug("starting gui")
+        from gui.app import App
+        App().run()
 
 
 if __name__ == '__main__':
